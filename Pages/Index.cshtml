@@ -4,7 +4,55 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .section {
+        text-align: center;
+    }
+
+    .section h1 {
+        background-color: darkblue;
+        color: aliceblue;
+        padding: 10px;
+        margin: 0;
+    }
+    .section h2 {
+        background-color: white;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .section img {
+        width: 420px;
+        height: 280px;
+    }
+</style>
+
+<div id="container">
+    <div class="section">
+        <a href=""> <img src="/Images/sanatci_header.jpeg" alt="Sanatçılar" /> </a>
+        <h1>SANATÇILAR</h1>
+        <h3>Popüler sanatçılar bu kısımda sergilenmektedir.</h3>
+        <h5>Ressamlar, heykeltraşlar, seramik sanatçıları...</h5>
+    </div>
+
+    <div class="section">
+        <a href=""> <img src="/Images/eser_header.jpg" alt="Sanat Eserleri" /> </a>
+        <h1>SANAT ESERLERİ</h1>
+        <h3>Popüler sanat eserleri bu kısımda sergilenmektedir.</h3>
+        <h5>Resimler, heykeller, seramikler...</h5>
+    </div>
+
+    <div class="section">
+        <a href=""> <img src="/Images/akimlar_header.jpg" alt="Sanat Akımları" /> </a>
+        <h1>SANAT AKIMLARI</h1>
+        <h3>Popüler sanat akımları bu kısımda sergilenmektedir.</h3>
+        <h5>Gotik, Rönesans, Realizm...</h5>
+    </div>
 </div>

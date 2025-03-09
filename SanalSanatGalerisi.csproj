@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Images\akimlar_header.jpg" />
+    <None Include="wwwroot\Images\ArkaPlan.jpg" />
+    <None Include="wwwroot\Images\eser_header.jpg" />
+  </ItemGroup>
+
 </Project>
