@@ -2,3 +2,103 @@
 @model SanalSanatGalerisi.Pages.sanatcilarModel
 @{
 }
+<head>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+            .gallery div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .gallery img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
+        h2 {
+            font-size: 16px;
+            margin-top: 5px;
+            color: black;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        h3 {
+            font-size: 14px;
+            color: black;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        h4 {
+            font-size: 12px;
+            color: black;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div>
+            <img src="/Images/Sanatcilar/800px-Auguste_Rodin_1893_Nadar.jpg" />
+            <h2>Aguste Rodin</h2>
+            <h3>François-Auguste Rodin, (d. 12 Kasım 1840, Paris - ö. 17 Kasım 1917, Meudon)</h3>
+            <h4>François-Auguste Rodin, Fransız heykeltıraş. Paris'te 12 Kasım 1840 tarihinde doğan François-Auguste-René Rodin, La Petite École isimli Özel Desen ve Matematik Okulu'na girdiğinde heykeli keşfetti ve desen becerisini geliştirmeye başladı.</h4>
+        </div>
+        <div>
+            <img src="/Images/Sanatcilar/Frida_Kahlo,_by_Guillermo_Kahlo.jpg" />
+            <h2>Frida Kahlo</h2>
+            <h3>Magdalena Carmen Frida Kahlo Calderon (6 Temmuz 1907 - 13 Temmuz 1954)</h3>
+            <h4>Magdalena Carmen Frida Kahlo Calderon, Meksikalı ressamdır. Bir yirminci yüzyıl popüler kültür ikonu hâline gelen ressam, resimlerinin yanı sıra inişli çıkışlı özel yaşamı ve politik görüşleri ile tanınır. Sanatı sürrealist olarak tanımlanmışsa da kendisi bu tanımı reddetmiştir. Ressam Diego Rivera'nın eşidir.</h4>
+        </div>
+        <div>
+            <img src="/Images/Sanatcilar/LEONARDO.jpeg" />
+            <h2>Leonardo Da Vinci</h2>
+            <h3>Leonardo di ser Piero da Vinci (15 Nisan 1452 - 2 Mayıs 1519)</h3>
+            <h4>Leonardo Da Vinci, Rönesans döneminin en büyük sanatçılarından biridir. Tüm zamanların en ünlü ressamı olan Da Vinci, aynı zamanda bilim insanı, mühendis, mucit ve anatomisttir. En ünlü eserleri "Mona Lisa" ve "Son Akşam Yemeği"dir.</h4>
+        </div>
+        <div>
+            <img src="/Images/Sanatcilar/Michelangelo_Daniele_da_Volterra_(dettaglio).jpg" />
+            <h2>Michelangelo</h2>
+            <h3>Michelangelo Buonarroti (6 Mart 1475 - 18 Şubat 1564)</h3>
+            <h4>Michelangelo, İtalyan Rönesans sanatçısıdır. Heykeltraş, ressam, mimar ve şair olan Michelangelo, "David" heykeli ve Sistine Şapeli'nin tavanındaki fresklerle tanınır. Sanat tarihi için önemli bir figürdür.</h4>
+        </div>
+        <div>
+            <img src="/Images/Sanatcilar/Pablo_picasso_1.jpg" />
+            <h2>Pablo Picasso</h2>
+            <h3>Pablo Diego José Francisco Picasso (25 Ekim 1881 - 8 Nisan 1973)</h3>
+            <h4>Pablo Picasso, İspanyol ressam, heykeltıraş, baskı sanatçısı ve seramikçidir. Sanatın modern döneme geçişinde büyük rol oynamıştır. En bilinen eserleri "Guernica" ve "Les Demoiselles d'Avignon"dur.</h4>
+        </div>
+        <div>
+            <img src="/Images/Sanatcilar/Portrait_of_Henri_Matisse_1933_May_20.jpg" />
+            <h2>Henri Matisse</h2>
+            <h3>Henri Émile Benoît Matisse (31 Aralık 1869 - 3 Kasım 1954)</h3>
+            <h4>Henri Matisse, Fransız ressam ve heykeltıraştır. 20. yüzyılın en önemli sanatçılarından biridir. Özellikle renk kullanımıyla tanınır ve "Fovizm" akımının öncüsüdür.</h4>
+        </div>
+        <div>
+            <img src="/Images/Sanatcilar/Salvador_Dali_NYWTS.jpg" />
+            <h2>Salvador Dali</h2>
+            <h3>Salvador Domingo Felipe Jacinto Dalí i Domènech (11 Mayıs 1904 - 23 Ocak 1989)</h3>
+            <h4>Salvador Dalí, İspanyol sürrealist ressam ve heykeltıraştır. Dali, sürrealizmin öncülerinden biri olarak, hayal gücü ve sembolizmi ile tanınır. En ünlü eseri "Belleğin Azmi"dir (The Persistence of Memory).</h4>
+        </div>
+        <div>
+            <img src="/Images/Sanatcilar/self-portrait-1887.jpg!Large.jpg" />
+            <h2>Vincent Van Gogh</h2>
+            <h3>Vincent Willem van Gogh (30 Mart 1853 - 29 Temmuz 1890)</h3>
+            <h4>Vincent Van Gogh, Hollandalı postempresyonist ressamdır. Sanatı, renklerin ve fırça darbelerinin duygusal bir anlatımını içerir. En ünlü eserleri "Yıldızlı Gece" ve "Ayçiçekleri"dir.</h4>
+        </div>
+        <div>
+            <img src="/Images/Sanatcilar/Cinq_maîtres_de_la_Renaissance_florentine_Musée_du_Louvre_Peintures_INV_267_-_Donatello.jpg" />
+            <h2>Donatello</h2>
+            <h3>Donatello di Niccolò di Betto Bardi (1386 - 13 Aralık 1466)</h3>
+            <h4>Donatello, İtalyan Rönesans heykeltıraşıdır. Heykelleri, gerçekçiliği ve estetik anlayışı ile tanınır. En bilinen eseri "David" heykelidir.</h4>
+        </div>
+    </div>
+</body>

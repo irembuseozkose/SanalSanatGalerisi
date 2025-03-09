@@ -3,7 +3,9 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/SanalSanatGalerisi.styles.css" asp-append-version="true" />
 <style>
     #container {
         display: flex;
@@ -36,7 +38,7 @@
 
 <div id="container">
     <div class="section">
-        <a href=""> <img src="/Images/sanatci_header.jpeg" alt="Sanatçılar" /> </a>
+        <a asp-area="" asp-page="/sanatcilar"> <img src="/Images/sanatci_header.jpeg" alt="Sanatçılar" /> </a>
         <h1>SANATÇILAR</h1>
         <h3>Popüler sanatçılar bu kısımda sergilenmektedir.</h3>
         <h5>Ressamlar, heykeltraşlar, seramik sanatçıları...</h5>
