@@ -1,0 +1,121 @@
+﻿@page
+@model SanalSanatGalerisi.Pages.AkimlarcshtmlModel
+@{
+}
+<head>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+            .gallery div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .gallery img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
+        h2 {
+            font-size: 16px;
+            margin-top: 5px;
+            color: black;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        h3 {
+            font-size: 14px;
+            color: black;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        h4 {
+            font-size: 12px;
+            color: black;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div>
+            <img src="~/Images/Akimlar/Ronesans.jpeg"/>
+            <h2>Rönesans (Renaissance)</h2>
+            <h3>14. yüzyıldan 17. yüzyıla kadar süren bir dönem, insan figürünü ve doğayı gerçekçi bir şekilde betimlemeye odaklanmıştır.</h3>
+            <h4>Sanatçılar: Leonardo da Vinci, Michelangelo Buonarroti, Raphael, Donatello, Albrecht Dürer</h4>
+            <h5>1</h5>
+        </div>
+
+        <div>
+            <img src="~/Images/Akimlar/barok.jpg" />
+            <h2>Barok (Baroque)</h2>
+            <h3>17. yüzyılda gelişen bu akım, dramatik ışık kullanımı, duygusal yoğunluk ve hareketli kompozisyonlarla tanınır.</h3>
+            <h4>Sanatçılar: Caravaggio, Peter Paul Rubens, Rembrandt, Diego Velázquez</h4>
+            <h5>2</h5>
+        </div>
+
+        <div>
+            <img src="~/Images/Akimlar/empresyonizm.jpg" />
+            <h2>Empresyonizm (Impressionism)</h2>
+            <h3>19. yüzyılın sonlarına doğru ortaya çıkan bu akım, doğanın ışık ve renklerini özgür bir şekilde betimlemeye çalışmıştır.</h3>
+            <h4>Sanatçılar: Claude Monet, Pierre-Auguste Renoir, Edgar Degas, Camille Pissarro</h4>
+            <h5>3</h5>
+        </div>
+
+        <div>
+            <img src="~/Images/Akimlar/surrealizm.jpg" />
+            <h2>Sürrealizm (Surrealism)</h2>
+            <h3>1920'lerde ortaya çıkan, rüya ve bilinçaltı dünyasına dayalı bir akımdır, mantıksız ve fantastik imgelerle gerçeklik dışı sahneler yaratılır.</h3>
+            <h4>Sanatçılar: Salvador Dalí, René Magritte, Max Ernst, Joan Miró</h4>
+            <h5>4</h5>
+        </div>
+
+        <div>
+            <img src="~/Images/Akimlar/Ekspresyonizm.jpg" />
+            <h2>Ekspresyonizm (Expressionism)</h2>
+            <h3>20. yüzyılın başlarında, duyguların ve içsel dünyanın dışa vurulmasına odaklanır. Çarpıtılmış biçimler ve cesur renkler kullanılır.</h3>
+            <h4>Sanatçılar: Edvard Munch, Egon Schiele, Wassily Kandinsky, Ernst Ludwig Kirchner</h4>
+            <h5>5</h5>
+        </div>
+
+        <div>
+            <img src="~/Images/Akimlar/futuizm-akimi-markut-thumbnail.jpg" />
+            <h2>Fütürizm (Futurism)</h2>
+            <h3>20. yüzyılın başında ortaya çıkan bir akımdır. Hız, makineleşme ve endüstri gibi modern konuları, hareket ve zamanla birleşerek tasvir eder.</h3>
+            <h4>Sanatçılar: Umberto Boccioni, Giacomo Balla, Carlo Carrà</h4>
+            <h5>6</h5>
+        </div>
+
+        <div>
+            <img src="~/Images/Akimlar/kubizm.jpeg" />
+            <h2>Kubizm (Cubism)</h2>
+            <h3>20. yüzyılın başında Pablo Picasso ve Georges Braque tarafından geliştirilmiş, objelerin geometrik şekillerle yeniden şekillendirildiği bir akımdır.</h3>
+            <h4>Sanatçılar: Pablo Picasso, Georges Braque, Juan Gris</h4>
+            <h5>7</h5>
+        </div>
+
+        <div>
+            <img src="~/Images/Akimlar/dadaizm.jpg" />
+            <h2>Dadaizm (Dadaism)</h2>
+            <h3>1916-1920 yılları arasında, anlam arayışına karşı çıkan ve genellikle absürd ya da anlam dışı sanat eserleri yaratan bir akımdır.</h3>
+            <h4>Sanatçılar: Marcel Duchamp, Tristan Tzara, Hannah Höch</h4>
+            <h5>8</h5>
+        </div>
+
+        <div>
+            <img src="~/Images/Akimlar/minimalizm.jpg" >
+            <h2>Minimalizm (Minimalism)</h2>
+            <h3>1960'larda ortaya çıkan, basit formlar ve az sayıda öğe kullanarak estetik yaratmayı amaçlayan bir akımdır.</h3>
+            <h4>Sanatçılar: Donald Judd, Dan Flavin, Agnes Martin, Frank Stella</h4>
+            <h5>9</h5>
+        </div>
+    </div>
+</body>
