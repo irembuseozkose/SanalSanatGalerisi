@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 <link rel="stylesheet" href="~/SanalSanatGalerisi.styles.css" asp-append-version="true" />
 <style>
-    #container {
+    .container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -17,44 +17,204 @@
     .section {
         text-align: center;
     }
-
-    .section h1 {
+    .section img {
+        width: 420px;
+        height: 280px;
+    }
+    h2 {
         background-color: darkblue;
         color: aliceblue;
         padding: 10px;
         margin: 0;
     }
-    .section h2 {
-        background-color: white;
-        padding: 10px;
-        margin: 0;
+
+    h6 {
+        font-size: 16px;
+        margin-top: 5px;
+        color: black;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
 
-    .section img {
-        width: 420px;
-        height: 280px;
+    h4 {
+        font-size: 16px;
+        margin-top: 5px;
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
 </style>
 
-<div id="container">
+<div style="margin-block-end:500px" class="container">
     <div class="section">
         <a asp-area="" asp-page="/sanatcilar"> <img src="/Images/sanatci_header.jpeg" alt="Sanatçılar" /> </a>
-        <h1>SANATÇILAR</h1>
+        <a asp-area="" asp-page="/sanatcilar"> <h2>SANATÇILAR</h2> </a>
         <h3>Popüler sanatçılar bu kısımda sergilenmektedir.</h3>
         <h5>Ressamlar, heykeltraşlar,...</h5>
     </div>
 
     <div class="section">
         <a asp-area="" asp-page="/Sanatlar"> <img src="/Images/eser_header.jpg" alt="Sanat Eserleri" /> </a>
-        <h1>SANAT ESERLERİ</h1>
+        <a asp-area="" asp-page="/Sanatlar"> <h2>SANAT ESERLERİ</h2> </a>
         <h3>Popüler sanat eserleri bu kısımda sergilenmektedir.</h3>
         <h5>Resimler, heykeller...</h5>
     </div>
 
     <div class="section">
         <a asp-area="" asp-page="/Akimlar"> <img src="/Images/akimlar_header.jpg" alt="Sanat Akımları" /> </a>
-        <h1>SANAT AKIMLARI</h1>
+        <a asp-area="" asp-page="/Akimlar"> <h2>SANAT AKIMLARI</h2> </a>
         <h3>Popüler sanat akımları bu kısımda sergilenmektedir.</h3>
         <h5>Rönesans, Barok...</h5>
     </div>
+</div>
+
+<div class="container">
+    <table style="outline-style">
+        <tr>
+            <th style="background-color:darkblue"><h4>Sanatçılar ve Eserleri</h4></th>
+            <th style="background-color:darkblue"><h4>Akımlar ve Sanatçılar</h4></th>
+        </tr> 
+        <tr>
+            <th>
+                <ul>
+                    <li>
+                        <h6>Auguste Rodin</h6>
+                        <ul>
+                            <li><strong>Eser:</strong> Düşünen Adam (The Thinker)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Frida Kahlo</h6>
+                        <ul>
+                            <li><strong>Eser:</strong> İki Frida (The Two Fridas)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Leonardo Da Vinci</h6>
+                        <ul>
+                            <li><strong>Eser:</strong> Mona Lisa</li>
+                            <li><strong>Eser:</strong> Son Akşam Yemeği (The Last Supper)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Michelangelo</h6>
+                        <ul>
+                            <li><strong>Eser:</strong> David</li>
+                            <li><strong>Eser:</strong> Sistine Şapeli'nin Tavanı (Sistine Chapel Ceiling)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Pablo Picasso</h6>
+                        <ul>
+                            <li><strong>Eser:</strong> Guernica</li>
+                            <li><strong>Eser:</strong> Les Demoiselles d'Avignon</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Henri Matisse</h6>
+                        <ul>
+                            <li><strong>Eser:</strong> Dans (Dance)</li>
+                            <li><strong>Eser:</strong> Kırmızı Odanın İçinde (The Red Room)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Salvador Dalí</h6>
+                        <ul>
+                            <li><strong>Eser:</strong> Belleğin Azmi (The Persistence of Memory)</li>
+                            <li><strong>Eser:</strong> Rüya (The Dream)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Vincent Van Gogh</h6>
+                        <ul>
+                            <li><strong>Eser:</strong> Yıldızlı Gece (Starry Night)</li>
+                            <li><strong>Eser:</strong> Ayçiçekleri (Sunflowers)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Donatello</h6>
+                        <ul>
+                            <li><strong>Eser:</strong> David</li>
+                            <li><strong>Eser:</strong> St. George</li>
+                        </ul>
+                    </li>
+                </ul>
+            </th>
+            <th>
+                <ul>
+                    <li>
+                        <h6>Empresyonizm (Impressionism)</h6>
+                        <ul>
+                            <li><strong>Sanatçı:</strong> Claude Monet</li>
+                            <li><strong>Sanatçı:</strong> Pierre-Auguste Renoir</li>
+                            <li><strong>Sanatçı:</strong> Edgar Degas</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Post-Empresyonizm (Post-Impressionism)</h6>
+                        <ul>
+                            <li><strong>Sanatçı:</strong> Vincent Van Gogh</li>
+                            <li><strong>Sanatçı:</strong> Paul Cézanne</li>
+                            <li><strong>Sanatçı:</strong> Georges Seurat</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Sürrealizm (Surrealism)</h6>
+                        <ul>
+                            <li><strong>Sanatçı:</strong> Salvador Dalí</li>
+                            <li><strong>Sanatçı:</strong> René Magritte</li>
+                            <li><strong>Sanatçı:</strong> Max Ernst</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Fovizm (Fauvism)</h6>
+                        <ul>
+                            <li><strong>Sanatçı:</strong> Henri Matisse</li>
+                            <li><strong>Sanatçı:</strong> André Derain</li>
+                            <li><strong>Sanatçı:</strong> Maurice de Vlaminck</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Kübizm (Cubism)</h6>
+                        <ul>
+                            <li><strong>Sanatçı:</strong> Pablo Picasso</li>
+                            <li><strong>Sanatçı:</strong> Georges Braque</li>
+                            <li><strong>Sanatçı:</strong> Juan Gris</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Rönesans (Renaissance)</h6>
+                        <ul>
+                            <li><strong>Sanatçı:</strong> Leonardo Da Vinci</li>
+                            <li><strong>Sanatçı:</strong> Michelangelo</li>
+                            <li><strong>Sanatçı:</strong> Raphael</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Barok (Baroque)</h6>
+                        <ul>
+                            <li><strong>Sanatçı:</strong> Caravaggio</li>
+                            <li><strong>Sanatçı:</strong> Rembrandt</li>
+                            <li><strong>Sanatçı:</strong> Peter Paul Rubens</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Empresyonizm (Expressionism)</h6>
+                        <ul>
+                            <li><strong>Sanatçı:</strong> Edvard Munch</li>
+                            <li><strong>Sanatçı:</strong> Egon Schiele</li>
+                            <li><strong>Sanatçı:</strong> Wassily Kandinsky</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Neoklasizm (Neoclassicism)</h6>
+                        <ul>
+                            <li><strong>Sanatçı:</strong> Jacques-Louis David</li>
+                            <li><strong>Sanatçı:</strong> Jean-Auguste-Dominique Ingres</li>
+                            <li><strong>Sanatçı:</strong> Antonio Canova</li>
+                        </ul>
+                    </li>
+                </ul>
+            </th>
+        </tr>
+    </table>
+
 </div>
