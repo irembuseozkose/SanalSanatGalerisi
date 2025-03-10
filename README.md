@@ -19,6 +19,7 @@ Anasayfa üzerinde listeleme ve tablo oluşturma etiketleri ile site içeriğine
 
 Mavi renk baz alınarak tasarım yapılmıştır.
 Sitenin arayüzü aşağıda bulunmaktadır:
+
 Anasayfa:
 ![image](https://github.com/user-attachments/assets/05e225a0-537e-48d5-bdc6-f001690289cf)
 
