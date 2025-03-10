@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/eedcdd0c-c57a-45e8-b016-b7b9841f109d)# SanalSanatGalerisi
+# SanalSanatGalerisi
 
 Bu proje Karadeniz Teknik Üniversitesi Web Programlama dersi ödevi için yapılmıştır.
 
